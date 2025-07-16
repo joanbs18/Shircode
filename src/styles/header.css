@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  z-index: 1000;
+}
+
+
+
+.header-nav {
+  display: flex;
+  gap: 6rem;
+  color: var(--white);
+  border-radius: 2rem;
+  padding: 1rem 4rem;
+  font-size: 1.8rem;
+  background-color: var(--transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+}
+
+
+.header-nav a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}

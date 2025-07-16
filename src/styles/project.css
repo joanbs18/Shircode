@@ -1,0 +1,30 @@
+.project-container {
+  margin-top: 3.2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: auto;
+  max-width: 90%;
+  place-content: center;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.project-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-top: 0.2rem;
+}

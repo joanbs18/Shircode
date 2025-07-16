@@ -1,0 +1,40 @@
+.responsive-section {
+  background-color: var(--blue);
+  color: var(--gray);
+  margin-top: 3.2rem;
+  height: 50rem;
+}
+
+.responsive-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .responsive-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.slider {
+  aspect-ratio: 10 / 16;
+  width: 30rem;
+  position: relative;
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+
+}
+
+.slider img {
+  width: 100%;
+  left: 0;
+  position: sticky;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
