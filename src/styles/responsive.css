@@ -1,8 +1,9 @@
 .responsive-section {
-  background-color: var(--blue);
-  color: var(--gray);
+  color: var(--white);
   margin-top: 3.2rem;
   height: 50rem;
+  background-color: var(--blue);
+  display: flex;
 }
 
 .responsive-container {
@@ -12,7 +13,77 @@
   gap: 2rem;
   max-width: 90%;
   margin: auto;
+}
+
+.responsive-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.responsive-list {
+  list-style: none;
+  font-size: 1.7rem;
+  margin-top: 2.2rem;
+}
+
+.responsive-list li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.responsive-btn {
   position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: var(--white);
+  border: none;
+  font-family: inherit;
+  margin-top: 3.2rem;
+}
+
+.default-btn,
+.hover-btn {
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hover-btn {
+  position: absolute;
+  inset: 0;
+  background-color: var(--white);
+  transform: translate(0%, 100%);
+}
+
+.default-btn span {
+  color: var(--blue);
+}
+
+.hover-btn span {
+  color: var(--blue);
+}
+
+button:hover .default-btn {
+  transform: translate(0%, -100%);
+}
+
+button:hover .hover-btn {
+  transform: translate(0%, 0%);
 }
 
 @media (min-width: 768px) {
@@ -21,20 +92,68 @@
   }
 }
 
-.slider {
-  aspect-ratio: 10 / 16;
-  width: 30rem;
-  position: relative;
-  display: flex;
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
+.responsive-container-image{
+
 
 }
 
-.slider img {
+.slider-frame {
+  height: auto;
+  overflow: hidden;
+
+
+    
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+
+ 
+}
+
+.slider-frame li {
   width: 100%;
-  left: 0;
-  position: sticky;
-  object-fit: cover;
-  scroll-snap-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.slider-frame img {
+  height: 100%;
+  max-height: 45rem;
+  
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
