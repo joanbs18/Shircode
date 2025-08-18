@@ -1,7 +1,6 @@
 .responsive-section {
   color: var(--white);
   margin-top: 3.2rem;
-  height: 50rem;
   background-color: var(--blue);
   display: flex;
 }
@@ -44,6 +43,8 @@
   font-family: inherit;
   margin-top: 3.2rem;
 }
+
+
 
 .default-btn,
 .hover-btn {

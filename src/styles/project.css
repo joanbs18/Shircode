@@ -2,6 +2,128 @@
   margin-top: 3.2rem;
 }
 
+.project-import {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  margin-bottom: 3.2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  max-width: 90%;
+}
+
+@media (min-width: 768px) {
+  .project-import {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pos-kicker {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--pos-primary);
+  background: rgba(107, 75, 255, 0.08);
+  border: 1px solid rgba(107, 75, 255, 0.2);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.9rem;
+}
+
+.pos-title {
+  margin: 0 0 0.5rem;
+  line-height: 1.08;
+}
+.pos-title__small {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 0.35rem;
+}
+.pos-title__main {
+  display: block;
+  font-weight: 900;
+}
+
+.pos-subtitle {
+  font-size: 1.7rem;
+  margin: 0.6rem 0 1.2rem;
+}
+
+.pos-highlight {
+  font-weight: 700;
+}
+
+.pos-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+.pos-features li {
+  display: flex;
+  align-items: start;
+  gap: 0.6rem;
+  padding: 0.55rem 0;
+  font-size: 1.8rem;
+}
+
+.pos-features li::before {
+  content: "→";
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.project-btn {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: var(--blue);
+  border: none;
+  font-family: inherit;
+}
+
+.project-default-btn,
+.project-hover-btn {
+  background-color: var(--blue);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.project-hover-btn {
+  position: absolute;
+  inset: 0;
+  background-color: var(--blue);
+  transform: translate(0%, 100%);
+}
+
+.project-default-btn span {
+  color: var(--white);
+}
+
+.project-hover-btn span {
+  color: var(--white);
+}
+
+button:hover .project-default-btn {
+  transform: translate(0%, -100%);
+}
+
+button:hover .project-hover-btn {
+  transform: translate(0%, 0%);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
