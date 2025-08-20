@@ -4,6 +4,7 @@ import CarouselServices from "../components/CarouselServicios";
 import ResponsiveSection from "../components/ResposiveSection";
 import HowToStart from "../components/HowToStart";
 import StackTec from "../components/StackTec";
+import ContactForm from "../components/ContactForm";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <ResponsiveSection />
       <HowToStart />
       <StackTec />
+      <ContactForm />
   
     </>
   );

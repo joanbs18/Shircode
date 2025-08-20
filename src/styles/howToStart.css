@@ -17,16 +17,24 @@
 
 .steps-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  width: 100%;
+  width: 90%;
   max-width: 120rem;
 }
 
-.last-step {
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .last-step {
   grid-column: span 3 / span 3;
   text-align: center;
 }
+}
+
+
 
 .step-card {
   border-radius: 1.2rem;
