@@ -148,16 +148,16 @@ const ResponsiveSection: React.FC = () => {
           <div className="slider-frame">
             <ul>
               <li>
-                <img src="/img/phone-png.webp" alt="" />
+                <img src="/img/phone-shircode.png" alt="Shircode" />
               </li>
               <li>
-                <img src="/img/phone-png.webp" alt="" />
+                <img src="/img/phone-gali.png" alt="Gali" />
               </li>
               <li>
-                <img src="/img/phone-png.webp" alt="" />
+                <img src="/img/phone-egguz.png" alt="Egguz" />
               </li>
               <li>
-                <img src="/img/phone-png.webp" alt="" />
+                <img src="/img/phone-asterion.png" alt="Asterion" />
               </li>
             </ul>
           </div>

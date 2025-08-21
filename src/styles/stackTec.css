@@ -110,10 +110,6 @@
     margin: 0 0.5rem;
   }
 
-  .stack-title {
-    font-size: 2rem;
-  }
-
   .tech-grid {
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     gap: 1rem;
@@ -125,19 +121,11 @@
 }
 
 @media (max-width: 480px) {
-  .stack-title {
-    font-size: 1.8rem;
-  }
 
-  .stack-description {
-    font-size: 1rem;
-  }
 
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .category-title {
-    font-size: 1.4rem;
-  }
+
 }

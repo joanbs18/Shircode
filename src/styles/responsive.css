@@ -3,6 +3,7 @@
   margin-top: 3.2rem;
   background-color: var(--blue);
   display: flex;
+  
 }
 
 .responsive-container {
@@ -10,8 +11,16 @@
   grid-template-columns: repeat(1, 1fr);
   padding: 2rem;
   gap: 2rem;
-  max-width: 90%;
   margin: auto;
+
+}
+
+@media (max-width: 768px) {
+   .responsive-container {
+text-align: center;
+
+}
+
 }
 
 .responsive-description {
@@ -44,6 +53,18 @@
   margin-top: 3.2rem;
 }
 
+
+@media (max-width: 768px) {
+  .responsive-btn {
+    width: 100%;
+  }
+
+  .default-btn,
+  .hover-btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
 
 
 .default-btn,

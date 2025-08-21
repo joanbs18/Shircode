@@ -5,6 +5,7 @@ import ResponsiveSection from "../components/ResposiveSection";
 import HowToStart from "../components/HowToStart";
 import StackTec from "../components/StackTec";
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <HowToStart />
       <StackTec />
       <ContactForm />
+      <Footer />
   
     </>
   );

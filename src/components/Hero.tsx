@@ -31,8 +31,7 @@ const Hero: React.FC = () => {
           className="blur-text"
         />
         <BlurText
-          text="Standout web design
-for tech and AI brands"
+          text="Innovación digital a tu medida"
           delay={150}
           animateBy="words"
           direction="top"
@@ -40,7 +39,7 @@ for tech and AI brands"
         />
 
         <BlurText
-          text="I build websites that bring users in and drive revenue. Built fast, designed to convert, ready to grow."
+          text="Creo soluciones inteligentes en web, software, apps y comercio digital, impulsadas con IA."
           delay={150}
           animateBy="words"
           direction="top"
@@ -48,17 +47,16 @@ for tech and AI brands"
         />
 
         <button className="btn-53">
-          <div className="original">Let´s talk</div>
+          <div className="original">Hablemos</div>
           <div className="letters">
-            <span>L</span>
-            <span>e</span>
-            <span>t´</span>
-            <span>s</span>
-            <span> </span>
-            <span>t</span>
+            <span>H</span>
             <span>a</span>
+            <span>b</span>
             <span>l</span>
-            <span>k</span>
+            <span>e</span>
+            <span>m</span>
+            <span>o</span>
+            <span>s</span>
           </div>
         </button>
       </div>

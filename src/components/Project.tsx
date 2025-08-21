@@ -96,11 +96,13 @@ function Project() {
           </button>
         </div>
         <img
-          src="/img/egguz (1).webp"
+          src="/img/persona-2.png"
           alt="Project 1"
-          className="project-image"
+          className="shirorder-image"
         />
       </div>
+
+      <h1 style={{textAlign: "center", marginBottom: "3.2rem"}}>Software que Impulsa Resultados</h1>
       <div className="project-grid">
         <div className="project-item">
           <img

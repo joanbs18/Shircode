@@ -36,12 +36,13 @@
 }
 .pos-title__small {
   display: block;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 0.35rem;
 }
 .pos-title__main {
   display: block;
   font-weight: 900;
+  color: var(--blue);
 }
 
 .pos-subtitle {
@@ -83,6 +84,9 @@
   font-family: inherit;
 }
 
+
+
+
 .project-default-btn,
 .project-hover-btn {
   background-color: var(--blue);
@@ -99,6 +103,18 @@
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .project-btn {
+    width: 100%;
+  }
+
+  .project-default-btn,
+  .project-hover-btn {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .project-hover-btn {
@@ -122,6 +138,9 @@ button:hover .project-default-btn {
 
 button:hover .project-hover-btn {
   transform: translate(0%, 0%);
+}
+
+.shirorder-image{
 }
 
 .project-grid {
