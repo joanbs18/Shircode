@@ -4,7 +4,7 @@ import TiltedCard from "./TiltedCard";
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-content">
         <TiltedCard
           imageSrc="/img/FotodeJoanBs.jpg"
@@ -46,7 +46,12 @@ const Hero: React.FC = () => {
           className="blur-text-description"
         />
 
-        <button className="btn-53">
+        <button className="btn-53"  onClick={() =>
+              window.open(
+                "https://wa.me/50687284070?text=Hola%20quiero%20más%20información%20sobre:",
+                "_blank"
+              )
+            }>
           <div className="original">Hablemos</div>
           <div className="letters">
             <span>H</span>

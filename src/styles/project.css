@@ -132,11 +132,11 @@
   color: var(--white);
 }
 
-button:hover .project-default-btn {
+.project-btn:hover .project-default-btn {
   transform: translate(0%, -100%);
 }
 
-button:hover .project-hover-btn {
+.project-btn:hover .project-hover-btn {
   transform: translate(0%, 0%);
 }
 

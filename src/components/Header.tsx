@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "../styles/header.css";
 
 const Header: React.FC = () => {
@@ -25,10 +24,10 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <nav className={`header-nav ${scrolled ? "scrolled" : ""}`}>
-        <Link to="/">Inicio</Link>
-        <Link to="/proyectos">Proyectos</Link>
-        <Link to="/acerca">Acerca</Link>
-        <Link to="/contacto">Contacto</Link>
+        <a href="#home">Inicio</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#about">Acerca</a>
+        <a href="#contact">Contacto</a>
       </nav>
     </header>
   );

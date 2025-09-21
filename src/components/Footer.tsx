@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h1>Shircode ;</h1>
+          <h2>Shircode ;</h2>
           <p>Desarrollando soluciones innovadoras para el mundo digital.</p>
         </div>
 
@@ -14,26 +14,26 @@ const Footer: React.FC = () => {
           <h4>Enlaces Rápidos</h4>
           <ul>
             <li>
-              <a href="/inicio">Inicio</a>
+              <a href="#home">Inicio</a>
             </li>
             <li>
-              <a href="/servicios">Servicios</a>
+              <a href="#projects">Servicios</a>
             </li>
+            {/* <li>
+              <a href="">Portafolio</a>
+            </li> */}
             <li>
-              <a href="/portafolio">Portafolio</a>
-            </li>
-            <li>
-              <a href="/contacto">Contacto</a>
+              <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
 
         <div className="footer-section">
           <h4>Contacto</h4>
-          <p>Email: shircode@gmail.com</p>
-          <p>Teléfono: +506 87284070</p>
+          <p>Email: shircodecr@gmail.com</p>
+          <p>Teléfono: +506 8728 4070</p>
           <div className="social-icons">
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61578318590089" aria-label="Facebook">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               </svg>
             </a>
 
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/shircode/" aria-label="Instagram">
               {" "}
               <svg
                 style={{ color: "white" }}
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                 />
               </svg>
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/joan-bravo-solano/" aria-label="LinkedIn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

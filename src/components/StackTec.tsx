@@ -66,7 +66,7 @@ const StackTec: React.FC = () => {
 
   return (
     <div className="stack-tec-container">
-      <h1 className="stack-title">Nuestro Stack Tecnológico</h1>
+      <h2 className="stack-title">Nuestro Stack Tecnológico</h2>
       <p className="stack-description">
         Estas son las tecnologías que utilizamos para crear soluciones
         innovadoras y de alta calidad.

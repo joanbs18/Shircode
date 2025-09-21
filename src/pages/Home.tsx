@@ -1,15 +1,18 @@
-import Hero from "../components/Hero";
-import We from "../components/Project";
-import CarouselServices from "../components/CarouselServicios";
-import ResponsiveSection from "../components/ResposiveSection";
-import HowToStart from "../components/HowToStart";
-import StackTec from "../components/StackTec";
-import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
+import { Suspense, lazy } from "react";
+
+
+const Hero = lazy(() => import("../components/Hero"));
+const We = lazy(() => import("../components/Project"));
+const CarouselServices = lazy(() => import("../components/CarouselServicios"));
+const ResponsiveSection = lazy(() => import("../components/ResposiveSection"));
+const HowToStart = lazy(() => import("../components/HowToStart"));
+const StackTec = lazy(() => import("../components/StackTec"));
+const ContactForm = lazy(() => import("../components/ContactForm"));
+const Footer = lazy(() => import("../components/Footer"));
 
 function Home() {
   return (
-    <>
+    <Suspense fallback={<div>Cargando...</div>}>
       <Hero />
       <CarouselServices />
       <We />
@@ -18,8 +21,7 @@ function Home() {
       <StackTec />
       <ContactForm />
       <Footer />
-  
-    </>
+    </Suspense>
   );
 }
 

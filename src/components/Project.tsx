@@ -2,19 +2,19 @@ import "../styles/project.css";
 
 function Project() {
   return (
-    <div className="project-container">
+    <div className="project-container" id="projects">
       <div className="project-import">
         <div className="project-import-new">
           <div className="pos-kicker">Nuevo</div>
 
-          <h1 id="pos-hero-title" className="pos-title">
+          <h2 id="pos-hero-title" className="pos-title">
             <span className="pos-title__small">
               Presentamos nuestro sistema POS
             </span>
             <span className="pos-title__main">
               <b>ShirOrder</b>
             </span>
-          </h1>
+          </h2>
 
           <p className="pos-subtitle">
             Velocidad y simplicidad para tu restaurante: toma pedidos en caja,
@@ -41,7 +41,15 @@ function Project() {
               chefs.
             </li>
           </ul>
-          <button className="project-btn ">
+          <button
+            className="project-btn"
+            onClick={() =>
+              window.open(
+                "https://wa.me/50687284070?text=Hola%20quiero%20más%20información%20sobre:",
+                "_blank"
+              )
+            }
+          >
             <div className="project-default-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,44 +104,47 @@ function Project() {
           </button>
         </div>
         <img
-          src="/img/persona-2.png"
+          src="/img/persona-2.webp"
           alt="Project 1"
           className="shirorder-image"
         />
       </div>
 
-      <h1 style={{textAlign: "center", marginBottom: "3.2rem"}}>Software que Impulsa Resultados</h1>
+      <h2 style={{ textAlign: "center", marginBottom: "3.2rem" }}>
+        Software que Impulsa Resultados
+      </h2>
       <div className="project-grid">
+        <div className="project-item">
+          <img
+            src="/img/Macbook-Air-myrdistribuidora.webp"
+            alt="Project 1"
+            className="project-image"
+          />
+          <h2 className="project-title">Tienda en línea de verdurería</h2>
+          {/* <p className="project-description">Descripción del Proyecto 1.</p> */}
+        </div>
         <div className="project-item">
           <img
             src="/img/egguz (1).webp"
             alt="Project 1"
             className="project-image"
           />
-          <h1 className="project-title">Reservas y landing Page</h1>
+          <h2 className="project-title">Reservas de Fisioterapía</h2>
           {/* <p className="project-description">Descripción del Proyecto 1.</p> */}
         </div>
         <div className="project-item">
           <img src="/img/Gali.webp" alt="Project 1" className="project-image" />
-          <h1 className="project-title">Portafolio arquitectónico en línea</h1>
+          <h2 className="project-title">Portafolio arquitectónico en línea</h2>
           {/* <p className="project-description">Descripción del Proyecto 1.</p> */}
         </div>
+
         <div className="project-item">
           <img
-            src="/img/mryweb.webp"
+            src="/img/Macbook-Air-asterion-rg.webp"
             alt="Project 1"
             className="project-image"
           />
-          <h1 className="project-title">Tienda en línea de verdurería</h1>
-          {/* <p className="project-description">Descripción del Proyecto 1.</p> */}
-        </div>
-        <div className="project-item">
-          <img
-            src="/img/mryweb.webp"
-            alt="Project 1"
-            className="project-image"
-          />
-          <h1 className="project-title">Reservas y landing Page</h1>
+          <h2 className="project-title">Landing Page de Abogados</h2>
           {/* <p className="project-description">Descripción del Proyecto 1.</p> */}
         </div>
       </div>

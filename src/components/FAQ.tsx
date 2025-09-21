@@ -34,7 +34,7 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="faq-section">
-      <h1 className="faq-title">Preguntas Frecuentes</h1>
+      <h2 className="faq-title">Preguntas Frecuentes</h2>
       <div className="faq-list">
         {faqs.map((item, index) => (
           <div key={index} className="faq-item" onClick={() => toggleIndex(index)}>

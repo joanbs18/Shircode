@@ -99,8 +99,8 @@ const HowToStart: React.FC = () => {
   }, []);
 
   return (
-    <section className="how-to-start">
-      <h1 className="title">Nuestro proceso de desarrollo</h1>
+    <section className="how-to-start" id="about">
+      <h2 className="title">Nuestro proceso de desarrollo</h2>
       <p className="description-howToStart">7 fases para construir tu aplicación</p>
       <div className="steps-grid">
         {steps.map((step, index) => (

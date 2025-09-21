@@ -5,7 +5,7 @@ const ResponsiveSection: React.FC = () => {
     <section className="responsive-section">
       <div className="responsive-container">
         <div className="responsive-content">
-          <h1 className="responsive-title">Administración desde tu Teléfono</h1>
+          <h2 className="responsive-title">Administración desde tu Teléfono</h2>
           <p className="responsive-description">
             Olvidate de estar frente a una computadora todo el día. Nuestros
             sistemas están diseñados para que puedas administrar tu negocio
@@ -90,7 +90,12 @@ const ResponsiveSection: React.FC = () => {
               Recibir notificaciones instantáneas
             </li>
           </ul>
-          <button className="responsive-btn">
+          <button className="responsive-btn"  onClick={() =>
+              window.open(
+                "https://wa.me/50687284070?text=Hola%20quiero%20más%20información%20sobre:",
+                "_blank"
+              )
+            }>
             <div className="default-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
