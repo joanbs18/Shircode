@@ -43,6 +43,7 @@
   color: var(--white);
   cursor: pointer;
   line-height: 1.5;
+  margin-top: 2rem;
 }
 
 .btn-53 {

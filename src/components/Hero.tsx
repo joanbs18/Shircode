@@ -1,11 +1,11 @@
 import "../styles/hero.css";
-import BlurText from "./BlurText";
 import TiltedCard from "./TiltedCard";
 
 const Hero: React.FC = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-content">
+        {/* TiltedCard sigue siendo visual */}
         <TiltedCard
           imageSrc="/img/FotodeJoanBs.jpg"
           altText="Foto de Joan Bravo"
@@ -23,35 +23,25 @@ const Hero: React.FC = () => {
             <p className="tilted-card-demo-text">Joan Bravo - Shircode</p>
           }
         />
-        <BlurText
-          text="Shircode ;"
-          delay={150}
-          animateBy="words"
-          direction="top"
-          className="blur-text"
-        />
-        <BlurText
-          text="Innovación digital a tu medida"
-          delay={150}
-          animateBy="words"
-          direction="top"
-          className="blur-text-content"
-        />
 
-        <BlurText
-          text="Creo soluciones inteligentes en web, software, apps y comercio digital, impulsadas con IA."
-          delay={150}
-          animateBy="words"
-          direction="top"
-          className="blur-text-description"
-        />
+        {/* Texto SEO-friendly */}
+        <h1 style={{textAlign: "center"}}>Shircode ; <br />Desarrollo de Software, Páginas Web y Apps Móviles</h1>
+        <p style={{fontSize: "2rem", textAlign: "center"}}>
+          Impulsa tu negocio con soluciones digitales a medida. Creamos software personalizado,
+          páginas web profesionales, tiendas online (e-commerce) y aplicaciones móviles
+          optimizadas para tu empresa.
+        </p>
 
-        <button className="btn-53"  onClick={() =>
-              window.open(
-                "https://wa.me/50687284070?text=Hola%20quiero%20más%20información%20sobre:",
-                "_blank"
-              )
-            }>
+        {/* Botón */}
+        <button
+          className="btn-53"
+          onClick={() =>
+            window.open(
+              "https://wa.me/50687284070?text=Hola%20quiero%20más%20información%20sobre:",
+              "_blank"
+            )
+          }
+        >
           <div className="original">Hablemos</div>
           <div className="letters">
             <span>H</span>

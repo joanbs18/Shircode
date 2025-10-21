@@ -12,7 +12,7 @@ const Footer = lazy(() => import("../components/Footer"));
 
 function Home() {
   return (
-    <Suspense fallback={<div>Cargando...</div>}>
+    <Suspense fallback={<div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Shircode ;</div>}>
       <Hero />
       <CarouselServices />
       <We />
