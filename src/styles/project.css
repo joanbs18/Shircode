@@ -62,13 +62,13 @@
 .pos-features li {
   display: flex;
   align-items: start;
-  gap: 0.6rem;
-  padding: 0.55rem 0;
+  gap: 1rem;
+  padding: 1rem 0;
   font-size: 1.8rem;
 }
 
 .pos-features li::before {
-  content: "→";
+  content: "|";
   color: var(--blue);
   font-size: 2rem;
 }
@@ -83,9 +83,6 @@
   border: none;
   font-family: inherit;
 }
-
-
-
 
 .project-default-btn,
 .project-hover-btn {
@@ -140,7 +137,7 @@
   transform: translate(0%, 0%);
 }
 
-.shirorder-image{
+.shirorder-image {
 }
 
 .project-grid {
